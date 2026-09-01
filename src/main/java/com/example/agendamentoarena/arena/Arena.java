@@ -10,6 +10,7 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+// criação da tabela com nome arena
 @Entity
 @Table(name = "arena")
 @Getter
@@ -18,7 +19,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class Arena {
-
+    // Aqui a ORM que vai criar os atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
